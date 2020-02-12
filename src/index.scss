@@ -1,0 +1,37 @@
+@tailwind base;
+
+html {
+  @apply h-full;
+
+  ::selection {
+    @apply bg-white text-navy;
+  }
+}
+
+body {
+  @apply flex flex-col h-full bg-navy;
+}
+
+#header {
+  @apply font-mono text-white bg-periwinkle;
+}
+
+#toolbar {
+  @apply flex justify-end mr-4 mt-4;
+  > a {
+    @apply text-white font-bold py-2 px-4 mr-2 rounded;
+  }
+}
+
+#main {
+  @apply flex-grow flex-shrink-0 flex items-center justify-center mx-auto;
+  h1 {
+    @apply text-white;
+  }
+}
+
+#footer {
+  @apply flex-shrink-0 font-mono text-white text-right bg-periwinkle;
+}
+
+@tailwind utilities;
