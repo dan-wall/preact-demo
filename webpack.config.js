@@ -8,8 +8,9 @@ module.exports = {
     mode: 'production',
     entry: ['./src/index.js', './src/index.scss'],
     output: {
-        filename: './script.js',
-        path: path.resolve(__dirname, 'dist')
+        filename: 'script.js',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/'
     },
     module: {
         rules: [
